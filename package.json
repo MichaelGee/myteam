@@ -1,0 +1,14 @@
+{
+  "name": "myteam",
+  "version": "1.0.0",
+  "description": "![Design preview for the myteam website coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sal.js": "^0.8.5"
+  }
+}

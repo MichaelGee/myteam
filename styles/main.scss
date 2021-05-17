@@ -1,0 +1,363 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+body {
+  font-family: $fontFamily;
+}
+
+// Navbar
+
+.navbar {
+  padding: 1rem 4rem;
+  background: $midnightGreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      margin: 0 2rem;
+      width: 60%;
+    }
+    a {
+      margin: 0 1rem;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .nav-right {
+    .outline-button {
+      border: 1px solid $white;
+      background: $midnightGreen;
+      border-radius: 3rem;
+      padding: 0.5rem 1rem;
+      color: $white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 400;
+      &:hover {
+        background: $white;
+        color: $midnightGreen;
+        border: 1px solid $white;
+      }
+    }
+  }
+}
+
+// Banner
+.banner {
+  background: $midnightGreen;
+  padding-top: 6rem;
+  overflow: hidden;
+  .banner-container {
+    position: relative;
+    padding: 4rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: $white;
+      font-size: 5rem;
+      padding: 4rem;
+      span {
+        color: $lightCoral;
+      }
+    }
+    p {
+      color: $white;
+      font-size: 1rem;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    .banner-left-image {
+      position: absolute;
+      left: -101px;
+    }
+    .banner-bottom-image {
+      position: absolute;
+      right: 117px;
+      bottom: 0;
+    }
+  }
+}
+
+//Second section
+.second-section {
+  background: $sacramentoGreen;
+  padding: 5rem;
+  overflow: hidden;
+  .second-section-container {
+    padding: 4rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    h1 {
+      color: $white;
+      padding: 4rem;
+    }
+    .second-section-right {
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        .item-texts {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1.3rem;
+          .item-header {
+            color: $lightCoral;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+          }
+          .item-para {
+            color: $white;
+            line-height: 1.5;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .right-svg {
+      position: absolute;
+      bottom: -79px;
+      right: -181px;
+    }
+  }
+}
+
+.third-section {
+  background: $deepJungleGreen;
+  padding: 5rem;
+  overflow: hidden;
+  position: relative;
+  .third-section-container {
+    padding: 4rem 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    h1 {
+      color: $white;
+      padding: 4rem;
+      text-align: center;
+      span {
+        color: $raptureBlue;
+      }
+    }
+  }
+  .quotes-container {
+    display: flex;
+    align-items: center;
+    .quote-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      padding: 0 2rem;
+      .quote {
+        position: absolute;
+        z-index: 1;
+        top: -13px;
+      }
+      .quote-text {
+        color: white;
+        text-align: center;
+        z-index: 2;
+        margin: 2rem 0;
+      }
+      .name {
+        color: $raptureBlue;
+        margin: 0.5rem 0;
+      }
+      .title {
+        color: white;
+        font-style: italic;
+      }
+      .avatar {
+        margin: 1rem 0;
+        width: 20%;
+        border-radius: 50%;
+        border: 2px solid #c4fffe;
+      }
+    }
+  }
+  .image-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .image-two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+// Fourth part
+
+.fourth-section {
+  overflow: hidden;
+  padding: 5rem;
+  position: relative;
+  background: $lightCoral;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+    h1 {
+      color: $midnightGreen;
+    }
+    button {
+      border: 1px solid $midnightGreen;
+      background: transparent;
+      border-radius: 3rem;
+      padding: 0.5rem 1rem;
+      color: $midnightGreen;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 400;
+      &:hover {
+        background: $midnightGreen;
+        color: $white;
+        border: 1px solid $midnightGreen;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: $darkGreen;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  .left {
+    flex: 1;
+
+    img {
+      padding: 1rem 0;
+    }
+    a {
+      margin: 0 1rem;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    .address {
+      color: $white;
+      opacity: 0.6;
+      p{
+          margin: 0.7rem 0;
+      }
+    }
+    .right-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .icons {
+        img {
+          margin: 1rem 1rem;
+        }
+        
+      }
+      p {
+        color: $white;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+
+
+// Media queries
+@media screen and (max-width: 845px){
+   .navbar{
+    padding: 1rem 2rem;
+    .nav-left{
+        img{
+           width: 30%; 
+        }
+    }
+   }
+   .banner{
+       padding-top: 3rem;
+    .banner-container{
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+          }
+          p {
+           text-align: center;
+          }
+          .banner-left-image {
+            display:none;
+          }
+          .banner-bottom-image {
+            bottom: -73px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+    }
+   }
+
+   .second-section{
+       .second-section-container{
+        flex-direction: column;
+        align-items: flex-start;
+        h1{
+            padding: 4rem 0;
+        }
+        .right-svg {
+            top: -79px;
+          }
+       }
+   }
+
+   .quotes-container{
+       flex-direction: column;
+       .quote-item{
+        .avatar{
+           width: 10% !important;
+        }
+       }
+   }
+
+   .content{
+       flex-direction: column;
+       text-align: center;
+       button{
+           margin: 2rem 0;
+       }
+   }
+}
+
