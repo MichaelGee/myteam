@@ -834,7 +834,7 @@ body {
 
 @media screen and (max-width: 560px) {
   .banner-container p {
-    padding-bottom: 6rem;
+    padding-bottom: 6rem !important;
   }
   .item {
     -webkit-box-orient: vertical;
