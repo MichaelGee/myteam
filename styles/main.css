@@ -805,6 +805,9 @@ body {
   .second-section .second-section-container h1 {
     padding: 4rem 0;
   }
+  .second-section .second-section-container h1 {
+    text-align: center;
+  }
   .second-section .second-section-container .right-svg {
     top: -79px;
   }
@@ -826,6 +829,25 @@ body {
   }
   .content button {
     margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .banner-container, .second-section-container, .third-section-container, .fourth-section-container {
+    padding: 2rem !important;
+  }
+  .second-section, .third-section, .fourth-section {
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
