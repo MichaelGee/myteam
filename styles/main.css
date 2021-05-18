@@ -839,6 +839,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer .left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .footer .right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -883,6 +898,21 @@ body {
   .third-section,
   .fourth-section {
     padding: 1rem;
+  }
+  .footer .left img {
+    width: 50%;
+  }
+  .footer .left .links a {
+    font-size: 0.6rem;
+  }
+  .footer .right .address p {
+    font-size: 0.5rem;
+  }
+  .footer .right .right-side .icons img {
+    width: 6%;
+  }
+  .footer .right .right-side .copy {
+    font-size: 0.4rem;
   }
 }
 

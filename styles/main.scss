@@ -363,6 +363,12 @@ body {
   .footer{
     flex-direction: column;
     align-items: center;
+    .left{
+      align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
     .right{
       flex-direction: column;
       align-items: center;
@@ -398,6 +404,37 @@ body {
   .third-section,
   .fourth-section {
     padding: 1rem;
+  }
+
+  .footer{
+    .left{
+      img{
+        width: 50%;
+
+      }
+      .links{
+        a{
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .right{
+      .address{
+        p{
+          font-size: 0.5rem;
+        }
+      }
+      .right-side{
+        .icons{
+          img{
+            width: 6%;
+          }
+        }
+        .copy{
+          font-size: 0.4rem;
+        }
+      }
+    }
   }
 }
 
